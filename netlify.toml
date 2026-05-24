@@ -1,0 +1,15 @@
+# Netlify 静态站点配置
+# 将整个 cursordemo 文件夹拖入 https://app.netlify.com/drop 即可部署
+
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/xueli-2048"
+  to = "/xueli-2048/"
+  status = 301
+
+[[redirects]]
+  from = "/game-2048"
+  to = "/game-2048/"
+  status = 301
