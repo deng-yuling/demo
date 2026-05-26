@@ -1,0 +1,83 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: linear-gradient(160deg, #eef4ff, #fff5f7);
+  padding: 16px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 12px 32px rgba(100, 120, 180, 0.15);
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #3d4f7c;
+  margin-bottom: 6px;
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: #8a94a8;
+  margin-bottom: 24px;
+}
+
+.field {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.field span {
+  display: block;
+  font-size: 0.85rem;
+  color: #5c6b88;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #e4e9f2;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.field input:focus {
+  border-color: #6b8cff;
+}
+
+.message {
+  min-height: 1.2em;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.message.error { color: #e85d5d; }
+.message.success { color: #2e9e5b; }
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6b8cff, #5a6fd6);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:active { transform: scale(0.98); }

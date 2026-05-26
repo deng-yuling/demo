@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>登录</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-card">
+    <h1 class="title">欢迎登录</h1>
+    <p class="hint">演示账号：admin / 123456</p>
+
+    <form id="login-form" novalidate>
+      <label class="field">
+        <span>用户名</span>
+        <input id="username" type="text" autocomplete="username" placeholder="请输入用户名" />
+      </label>
+      <label class="field">
+        <span>密码</span>
+        <input id="password" type="password" autocomplete="current-password" placeholder="请输入密码" />
+      </label>
+      <p id="message" class="message" role="alert" aria-live="polite"></p>
+      <button type="submit" class="btn">登 录</button>
+    </form>
+  </div>
+
+  <script src="login-core.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
